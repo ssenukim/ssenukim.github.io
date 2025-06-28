@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>선우의 CV</title>
   <style>
+    /* 기본 레이아웃 */
     body {
       font-family: sans-serif;
       max-width: 800px;
@@ -20,9 +21,18 @@
       margin: 0;
       font-size: 2.5rem;
     }
-    p.subtitle {
-      color: #666;
-      margin-top: 0.5rem;
+    p.contact {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #007acc;
     }
     section {
       margin-bottom: 2rem;
@@ -32,37 +42,110 @@
       padding-bottom: 0.3rem;
     }
     ul {
-      list-style: none;
-      padding: 0;
+      margin: 0.5rem 0;
+      padding-left: 1.2rem;
     }
     ul li {
-      margin: 0.5rem 0;
+      margin: 0.3rem 0;
+    }
+    .subitem {
+      margin-left: 1.5rem;
+      list-style-type: disc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>선우 (Sunwoo)</h1>
-    <p class="subtitle">기계공학·로보틱스 연구원 &amp; 예비 창업자</p>
+    <h1>선우 Kim</h1>
+    <p class="contact">+82 10-5002-7397 | <a href="mailto:whimoon1826@naver.com">whimoon1826@naver.com</a></p>
   </header>
 
-  <section id="cv">
-    <h2>이력서 (CV)</h2>
+  <nav>
+    <a href="#interests">Interests</a>
+    <a href="#education">Education</a>
+    <a href="#award">Award</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#technologies">Technologies</a>
+  </nav>
+
+  <section id="interests">
+    <h2>Interests</h2>
     <ul>
-      <li><strong>학력</strong>: 고려대학교 기계공학/로보틱스 석사 (2025)</li>
-      <li><strong>경력</strong>: Mechatronics &amp; Field Robotics Lab 연구원</li>
-      <li><strong>기술 스택</strong>: MATLAB, Python, PyTorch, LabVIEW …</li>
-      <!-- 필요에 따라 항목을 더 추가하세요 -->
+      <li>Robot control</li>
+      <li>Learning-Based Control</li>
+      <li>State Estimation and Sensor Fusion</li>
+      <li>Force/Torque Estimation in Robotic Manipulators</li>
+      <li>Force/Torque Control in Robotic Manipulators</li>
+      <li>Collaborative Robot</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>연락처</h2>
+  <section id="education">
+    <h2>Education</h2>
     <ul>
-      <li>Email: example@korea.ac.kr</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></li>
-      <!-- 다른 연락처 추가 -->
+      <li><strong>Korea University</strong>, BS in Mechanical Engineering (Mar 2017 – Aug 2023)
+        <ul class="subitem">
+          <li>GPA: 3.55/4.5</li>
+          <li>Coursework: Robotics, Mechatronics, Kinematics</li>
+        </ul>
+      </li>
+      <li><strong>Korea University</strong>, MS in Mechanical Engineering (Sept 2023 – Present)
+        <ul class="subitem">
+          <li>GPA: 4.5/4.5</li>
+          <li>Coursework: Linear System, Vehicle Dynamics, Robust Control, Intelligent Control, Digital Control, Optimal Control, Kinematics Analysis</li>
+        </ul>
+      </li>
     </ul>
   </section>
+
+  <section id="award">
+    <h2>Award</h2>
+    <ul>
+      <li>MATLAB Korea AI Competition for University Students, Bronze Award 2023 (Team leader)</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        <strong>Acceleration Measurement-Free Dissipative Disturbance Observer for Robotic Manipulators</strong><br>
+        IEEE Robotics and Automation Letters, 2025<br>
+        Seonwoo Kim, Chanwoo Kim, Yeonho Ko, Daehie Hong<br>
+        DOI: <a href="https://doi.org/10.1109/LRA.2025.3564205">10.1109/LRA.2025.3564205</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Autonomous Excavator Trajectory Generation</strong> (Aug 2023 - Oct 2024)
+        <ul class="subitem">
+          <li>AI-based excavator trajectory generation model design</li>
+          <li>TCP/IP, CAN communication design</li>
+          <li>Terrain data acquisition and processing using vision depth camera</li>
+        </ul>
+      </li>
+      <li>
+        <strong>6-DOF Blade Control for Autonomous Motor Grader</strong> (Jan 2024 – Present)
+        <ul class="subitem">
+          <li>Design of 6-DOF blade pose estimation algorithm</li>
+          <li>TCP/IP, CAN communication design</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="technologies">
+    <h2>Technologies</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, C++, Python (PyTorch), MATLAB/Simulink, LabVIEW, Julia</li>
+      <li><strong>CAD:</strong> SolidWorks</li>
+    </ul>
+  </section>
+
 </body>
 </html>
