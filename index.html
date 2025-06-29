@@ -1,151 +1,71 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>선우의 CV</title>
-  <style>
-    /* 기본 레이아웃 */
-    body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      line-height: 1.6;
-      padding: 0 1rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    p.contact {
-      margin: 0.5rem 0;
-      color: #555;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #007acc;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      margin: 0.5rem 0;
-      padding-left: 1.2rem;
-    }
-    ul li {
-      margin: 0.3rem 0;
-    }
-    .subitem {
-      margin-left: 1.5rem;
-      list-style-type: disc;
-    }
-  </style>
+  <title>페이지 제목</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>선우 Kim</h1>
-    <p class="contact">+82 10-5002-7397 | <a href="mailto:whimoon1826@naver.com">whimoon1826@naver.com</a></p>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-white/80 backdrop-blur z-20">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="text-xl font-bold">LOGO</div>
+      <ul class="flex space-x-6">
+        <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#interests">Interests</a>
-    <a href="#education">Education</a>
-    <a href="#award">Award</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#technologies">Technologies</a>
-  </nav>
-
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>Robot control</li>
-      <li>Learning-Based Control</li>
-      <li>State Estimation and Sensor Fusion</li>
-      <li>Force/Torque Estimation in Robotic Manipulators</li>
-      <li>Force/Torque Control in Robotic Manipulators</li>
-      <li>Collaborative Robot</li>
-    </ul>
+  <!-- Hero Section -->
+  <section id="hero"
+           class="relative h-screen bg-cover bg-center"
+           style="background-image:url('https://source.unsplash.com/1600x900/?architecture');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">당신의 비즈니스를<br />한 단계 업그레이드</h1>
+      <p class="mb-6 max-w-lg">최신 웹 기술로 아름답고 빠른 웹사이트를 제공합니다.</p>
+      <a href="#contact"
+         class="px-6 py-3 bg-blue-500 rounded-full text-lg hover:bg-blue-600 transition">
+        문의하기
+      </a>
+    </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Korea University</strong>, BS in Mechanical Engineering (Mar 2017 – Aug 2023)
-        <ul class="subitem">
-          <li>GPA: 3.55/4.5</li>
-          <li>Coursework: Robotics, Mechatronics, Kinematics</li>
-        </ul>
-      </li>
-      <li><strong>Korea University</strong>, MS in Mechanical Engineering (Sept 2023 – Present)
-        <ul class="subitem">
-          <li>GPA: 4.5/4.5</li>
-          <li>Coursework: Linear System, Vehicle Dynamics, Robust Control, Intelligent Control, Digital Control, Optimal Control, Kinematics Analysis</li>
-        </ul>
-      </li>
-    </ul>
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">주요 서비스</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="font-semibold mb-2">빠른 배포</h3>
+          <p>GitHub Pages / Netlify로 즉시 배포합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4">🎨</div>
+          <h3 class="font-semibold mb-2">맞춤 디자인</h3>
+          <p>브랜드 컬러와 스타일에 맞춰 디자인합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4">🔒</div>
+          <h3 class="font-semibold mb-2">보안</h3>
+          <p>HTTPS, 기본 인증 설정으로 안전하게 운영.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="award">
-    <h2>Award</h2>
-    <ul>
-      <li>MATLAB Korea AI Competition for University Students, Bronze Award 2023 (Team leader)</li>
-    </ul>
-  </section>
-
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Acceleration Measurement-Free Dissipative Disturbance Observer for Robotic Manipulators</strong><br>
-        IEEE Robotics and Automation Letters, 2025<br>
-        Seonwoo Kim, Chanwoo Kim, Yeonho Ko, Daehie Hong<br>
-        DOI: <a href="https://doi.org/10.1109/LRA.2025.3564205">10.1109/LRA.2025.3564205</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Autonomous Excavator Trajectory Generation</strong> (Aug 2023 - Oct 2024)
-        <ul class="subitem">
-          <li>AI-based excavator trajectory generation model design</li>
-          <li>TCP/IP, CAN communication design</li>
-          <li>Terrain data acquisition and processing using vision depth camera</li>
-        </ul>
-      </li>
-      <li>
-        <strong>6-DOF Blade Control for Autonomous Motor Grader</strong> (Jan 2024 – Present)
-        <ul class="subitem">
-          <li>Design of 6-DOF blade pose estimation algorithm</li>
-          <li>TCP/IP, CAN communication design</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section id="technologies">
-    <h2>Technologies</h2>
-    <ul>
-      <li><strong>Languages:</strong> C, C++, Python (PyTorch), MATLAB/Simulink, LabVIEW, Julia</li>
-      <li><strong>CAD:</strong> SolidWorks</li>
-    </ul>
-  </section>
+  <!-- Footer -->
+  <footer class="py-8 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center text-gray-600">
+      © 2025 Your Name. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
