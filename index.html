@@ -82,54 +82,52 @@
   </section>
 
   <!-- Projects Section -->
-<section id="projects" class="py-16 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
-    <div class="space-y-8">
-      <!-- Project 1 -->
-      <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
-        <!-- 이미지 컨테이너 -->
-        <div class="md:w-1/3 flex items-center justify-center bg-gray-100 p-4">
-          <!-- 자유 형태 이미지에 object-contain 사용 -->
-          <img src="./images/excavator.jpg"
-               alt="Project 1"
-               class="w-full h-48 object-contain rounded-md" />
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="space-y-8">
+        <!-- Project 1 -->
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="md:w-1/3 flex items-center justify-center bg-gray-100 p-4">
+            <img src="./images/excavator.jpg" alt="Project 1" class="w-full h-48 object-contain rounded-md" />
+          </div>
+          <div class="md:w-2/3 p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Autonomous Excavator Trajectory Generation</h3>
+              <p class="text-gray-600 italic mb-4">Aug 2023 – Oct 2024</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Designed AI-based model for excavator trajectory planning using LSTM.</li>
+                <li>Implemented TCP/IP & CAN communication for control integration.</li>
+                <li>Processed terrain data via vision depth camera for input.</li>
+              </ul>
+            </div>
+            <a href="#" class="mt-4 self-start px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View Details</a>
+          </div>
         </div>
-        <!-- 설명 -->
-        <div class="md:w-2/3 p-6">
-          <h3 class="text-2xl font-semibold mb-2">Autonomous Excavator Trajectory Generation</h3>
-          <p class="text-gray-600 italic mb-4">Aug 2023 – Oct 2024</p>
-          <ul class="list-disc list-inside space-y-2 text-gray-700">
-            <li>Designed AI-based model for excavator trajectory planning using LSTM.</li>
-            <li>Implemented TCP/IP & CAN communication for control integration.</li>
-            <li>Processed terrain data via vision depth camera for input.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="md:w-1/3 flex items-center justify-center bg-gray-100 p-4">
-          <img src="./images/grader.jpg"
-               alt="Project 2"
-               class="w-full h-48 object-contain rounded-md" />
-        </div>
-        <div class="md:w-2/3 p-6">
-          <h3 class="text-2xl font-semibold mb-2">6-DOF Blade Control for Autonomous Motor Grader</h3>
-          <p class="text-gray-600 italic mb-4">Jan 2024 – Present</p>
-          <ul class="list-disc list-inside space-y-2 text-gray-700">
-            <li>Developed 6-DOF pose estimation algorithm for grader blade.</li>
-            <li>Integrated real-time TCP/IP & CAN protocols for feedback control.</li>
-            <li>Validated performance in simulated and field environments.</li>
-          </ul>
+        <!-- Project 2 -->
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="md:w-1/3 flex items-center justify-center bg-gray-100 p-4">
+            <img src="./images/grader.jpg" alt="Project 2" class="w-full h-48 object-contain rounded-md" />
+          </div>
+          <div class="md:w-2/3 p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">6-DOF Blade Control for Autonomous Motor Grader</h3>
+              <p class="text-gray-600 italic mb-4">Jan 2024 – Present</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Developed 6-DOF pose estimation algorithm for grader blade.</li>
+                <li>Integrated real-time TCP/IP & CAN protocols for feedback control.</li>
+                <li>Validated performance in simulated and field environments.</li>
+              </ul>
+            </div>
+            <a href="#" class="mt-4 self-start px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View Details</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Publications Section -->
-  <section id="publications" class="py-16 bg-gray-100">
+  <section id="publications" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Publications</h2>
       <div class="space-y-6">
@@ -137,25 +135,21 @@
         <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition">
           <h3 class="text-xl font-semibold mb-2">Acceleration Measurement-Free Dissipative Disturbance Observer for Robotic Manipulators</h3>
           <p class="text-gray-600 italic mb-1">IEEE Robotics and Automation Letters, 2025</p>
-          <p class="mb-1 text-gray-700">
-            <span class="font-bold text-blue-600">Seonwoo Kim</span>, Chanwoo Kim, Yeonho Ko, Daehie Hong
-          </p>
+          <p class="mb-1 text-gray-700"><span class="font-bold text-blue-600">Seonwoo Kim</span>, Chanwoo Kim, Yeonho Ko, Daehie Hong</p>
           <a href="https://doi.org/10.1109/LRA.2025.3564205" class="text-blue-600 hover:underline font-medium">DOI: 10.1109/LRA.2025.3564205</a>
         </div>
         <!-- Publication 2 -->
         <div class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition">
           <h3 class="text-xl font-semibold mb-2">Task Space End-Effector Contact Force Estimation for Robotic Manipulators Using a Bayesian-Augmented Interacting Multiple Model-Based Disturbance Kalman Filter</h3>
           <p class="text-gray-600 italic mb-1">IEEE Transactions on Instrumentation &amp; Measurement (Under Review)</p>
-          <p class="mb-1 text-gray-700">
-            <span class="font-bold text-blue-600">Seonwoo Kim</span>, Myeongin Jin, Jihoon Kim, Chanwoo Kim, Daehie Hong
-          </p>
+          <p class="mb-1 text-gray-700"><span class="font-bold text-blue-600">Seonwoo Kim</span>, Myeongin Jin, Jihoon Kim, Chanwoo Kim, Daehie Hong</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white">
+  <section id="contact" class="py-16 bg-gray-100">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
       <p class="mb-6">Feel free to reach out for collaboration or inquiries.</p>
@@ -165,7 +159,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 bg-white">
+  <footer class="py-8 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 text-center text-gray-600">
       © 2025 Seonwoo Kim. All rights reserved.
     </div>
