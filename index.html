@@ -10,48 +10,134 @@
 
   <!-- Header -->
   <header class="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-200 z-20">
-    <nav class="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
-      <div class="text-xl font-semibold text-gray-900">Seonwoo Kim</div>
+    <nav class="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">
+      <div class="text-2xl font-semibold text-gray-900">Seonwoo Kim</div>
       <ul class="flex space-x-8 text-sm">
         <li><a href="#home" class="hover:text-gray-600 transition">Home</a></li>
+        <li><a href="#education" class="hover:text-gray-600 transition">Education</a></li>
+        <li><a href="#teaching" class="hover:text-gray-600 transition">Teaching</a></li>
         <li><a href="#publications" class="hover:text-gray-600 transition">Publications</a></li>
         <li><a href="#research" class="hover:text-gray-600 transition">Research</a></li>
+        <li><a href="#awards" class="hover:text-gray-600 transition">Awards</a></li>
+        <li><a href="#technologies" class="hover:text-gray-600 transition">Technologies</a></li>
         <li><a href="./CV/My_CV.pdf" class="hover:text-gray-600 transition" target="_blank">CV</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Home Section -->
+  <!-- Home Section (About) -->
   <section id="home" class="pt-32 pb-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="mb-8">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Seonwoo Kim</h1>
-        <p class="text-lg text-gray-600">MS in Mechanical Engineering, Korea University</p>
-        <div class="mt-4 flex items-center space-x-4 text-sm text-gray-600">
-          <a href="mailto:whimoon1826@naver.com" class="hover:text-gray-900 transition">whimoon1826@naver.com</a>
-          <span>|</span>
-          <a href="https://ssenukim.github.io" class="hover:text-gray-900 transition">ssenukim.github.io</a>
-          <span>|</span>
-          <a href="https://linkedin.com" class="hover:text-gray-900 transition" target="_blank">LinkedIn</a>
+    <div class="max-w-[1400px] mx-auto px-6">
+      <!-- Profile Section with Photo -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <!-- Profile Photo -->
+        <div class="flex-shrink-0">
+          <img
+            src="./images/SeonwooKim.jpg"
+            alt="Seonwoo Kim"
+            class="w-48 rounded-lg shadow-md border border-gray-200"
+          />
+        </div>
+
+        <!-- Profile Info -->
+        <div class="flex-1">
+          <h1 class="text-4xl font-bold text-gray-900 mb-2">Seonwoo Kim</h1>
+          <p class="text-lg text-gray-600 mb-4">MS in Mechanical Engineering, Korea University</p>
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-600 mb-6">
+            <a href="mailto:whimoon1826@naver.com" class="hover:text-gray-900 transition">whimoon1826@naver.com</a>
+            <span class="hidden sm:inline">|</span>
+            <a href="https://ssenukim.github.io" class="hover:text-gray-900 transition">ssenukim.github.io</a>
+            <span class="hidden sm:inline">|</span>
+            <a href="https://linkedin.com" class="hover:text-gray-900 transition" target="_blank">LinkedIn</a>
+          </div>
+
+          <div class="prose prose-gray max-w-none">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300">About</h2>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                I am a robotics engineer specializing in <strong>robotic manipulation</strong>. I received both my <strong>B.S. and M.S. degrees in Mechanical Engineering</strong> from Korea University. During my Master's studies, I built a strong foundation in <strong>classical control engineering and state estimation theory</strong> for robotic manipulators. Currently, my research focuses on <strong>humanoid bi-manual manipulation</strong> using <strong>data-driven approaches</strong>. My ultimate goal is to address complex manipulation tasks by integrating <strong>classical model-based control and planning methods</strong> with modern <strong>learning-based techniques</strong>.
+              </p>
+            </div>
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300 mt-8">Current Interests</h2>
+            <div class="text-gray-700 leading-relaxed space-y-4">
+              <p>
+                My research interests lie in <strong>contact-rich robot manipulation</strong> and <strong>lightweight robot learning models</strong>. Currently, I am exploring the following key questions:
+              </p>
+              <ul class="list-disc list-inside space-y-2 ml-4">
+                <li>How can neural networks effectively comprehend and represent <strong>contact dynamics</strong>?</li>
+                <li>How can we address the <strong>data scarcity</strong> problem in robot learning?</li>
+                <li>How can we integrate dynamics-based control with data-driven algorithms to accelerate <strong>inference speed</strong> without compromising performance?</li>
+              </ul>
+              <p>
+                I believe that <strong>dexterous manipulation</strong> is a prerequisite for robots, including humanoids, to seamlessly coexist and collaborate with humans in everyday environments. In this context, my ultimate goal is to develop <strong>safe, human-level robot intelligence</strong> that enables humanoids to work alongside people.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="prose prose-gray max-w-none">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300">About</h2>
-        <p class="text-gray-700 leading-relaxed">
-          Seonwoo Kim is a graduate researcher specializing in robotic manipulation at Korea University, where he completed his Master's degree under the supervision of Prof. Daehie Hong. His research focuses on classical control theory and learning-based control for robotic manipulators, with particular emphasis on disturbance observer design and force estimation algorithms. He has published first-author papers in IEEE Robotics and Automation Letters (RA-L) and IEEE Transactions on Instrumentation and Measurement (TIM). Recently, he has expanded his focus to AI-driven robot learning at the Korea Institute of Science and Technology (KIST), exploring how imitation and reinforcement learning can enable complex manipulation behaviors in humanoid robots.
-        </p>
+  <!-- Education Section -->
+  <section id="education" class="py-16 bg-gray-50">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Education</h2>
+
+      <div class="space-y-6">
+        <!-- MS -->
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
+              <p class="text-sm text-gray-700">MS in Mechanical Engineering</p>
+            </div>
+            <span class="text-sm text-gray-500">Sept 2023 – Aug 2025</span>
+          </div>
+          <ul class="text-sm text-gray-700 space-y-1 ml-4">
+            <li>Advisor: Prof. Daehie Hong</li>
+            <li>GPA: 4.5/4.5</li>
+            <li><strong>Thesis:</strong> Adaptive Contact Force Estimation for Robotic Manipulators Using an Interacting Multiple Model-Based Disturbance Kalman Filter and Bayesian Neural Network</li>
+            <li><strong>Coursework:</strong> Linear system, Vehicle dynamics, Robust control, Intelligent control, Digital control, Optimal control, Kinematics Analysis</li>
+          </ul>
+        </div>
+
+        <!-- BS -->
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
+              <p class="text-sm text-gray-700">BS in Mechanical Engineering</p>
+            </div>
+            <span class="text-sm text-gray-500">Mar 2017 – Aug 2023</span>
+          </div>
+          <ul class="text-sm text-gray-700 space-y-1 ml-4">
+            <li>GPA: 3.55/4.5</li>
+            <li><strong>Coursework:</strong> Robotics, Mechatronics, Kinematics</li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-12">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300">Research Interests</h2>
-        <div class="text-gray-700 leading-relaxed space-y-3">
-          <p>
-            His research focuses on robotic manipulation, with particular emphasis on classical control theory and learning-based control for robotic manipulators. During his Master's studies, he developed a strong foundation in disturbance observer design and force estimation algorithms. More recently, he has expanded his focus to AI-driven robot learning, exploring how imitation and reinforcement learning can enable complex manipulation behaviors.
-          </p>
-          <p>
-            He is particularly interested in <strong>contact-rich manipulation</strong> and <strong>whole-body manipulation</strong>, where he aims to bridge model-based control with learning-based approaches to achieve robust and dexterous robot manipulation in unstructured environments.
-          </p>
+  <!-- Teaching Experience Section -->
+  <section id="teaching" class="py-16 bg-white">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Teaching Experience</h2>
+      <div class="space-y-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MECH226 Dynamics</p>
+            <p class="text-sm text-gray-600">Korea University, Prof. Daehie Hong</p>
+          </div>
+          <span class="text-sm text-gray-500">Mar 2024 – Dec 2024</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MOBI208 Dynamics</p>
+            <p class="text-sm text-gray-600">Korea University, Prof. Seongho Yun</p>
+          </div>
+          <span class="text-sm text-gray-500">Mar 2025 – Jun 2025</span>
         </div>
       </div>
     </div>
@@ -59,7 +145,7 @@
 
   <!-- Publications Section -->
   <section id="publications" class="py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
+    <div class="max-w-[1400px] mx-auto px-6">
       <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Publications</h2>
 
       <div class="space-y-8">
@@ -145,7 +231,7 @@
 
   <!-- Research Section -->
   <section id="research" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
+    <div class="max-w-[1400px] mx-auto px-6">
       <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Research Experience</h2>
 
       <div class="space-y-8">
@@ -159,9 +245,138 @@
             <span class="text-sm text-gray-500">Jul 2025 – Dec 2025</span>
           </div>
           <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm ml-4">
-            <li><strong>Autonomous bi-manual manipulation for humanoid robots:</strong> Developed humanoid bi-manual manipulation policies by training robot foundation model based AI model (Nvidia Gr00t) with combined real-world and synthetic datasets, enabling robust dual-arm coordination</li>
-            <li><strong>XR-based humanoid teleoperation system:</strong> Developed an integrated teleoperation system combining Meta Quest hand tracking, camera/sensor modules, and Jetson Orin-based control architecture to enable real-time humanoid robot manipulation through inverse kinematics</li>
-            <li><strong>Reinforcement learning for dexterous manipulation:</strong> Trained humanoid dexterous manipulation policies using reinforcement learning in NVIDIA Isaac Sim/Lab simulation environment for complex object manipulation tasks</li>
+            <li>
+              <strong>Autonomous bi-manual manipulation for humanoid robots:</strong> Developed humanoid bi-manual manipulation policies by training robot foundation model based AI model (Nvidia Gr00t) with combined real-world and synthetic datasets, enabling robust dual-arm coordination
+
+              <!-- Demo Videos for Nvidia Gr00t Project -->
+              <div class="mt-3 ml-4">
+                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Deployment -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/RWcn0mJ8BYI"
+                        title="Nvidia Gr00t - Deployment"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Robot foundation model deployment on humanoid platform</p>
+                  </div>
+
+                  <!-- Synthetic Data -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/HSkYfzylm7k"
+                        title="Nvidia Gr00t - Synthetic Data"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Synthetic data generation for training bi-manual manipulation policies</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <strong>XR-based humanoid teleoperation system:</strong> Developed an integrated teleoperation system combining Meta Quest hand tracking, camera/sensor modules, and Jetson Orin-based control architecture to enable real-time humanoid robot manipulation through inverse kinematics
+
+              <!-- Demo Videos for Teleoperation Project -->
+              <div class="mt-3 ml-4">
+                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Boxing -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/kcBF_xSYIxw"
+                        title="Humanoid Teleoperation - Boxing"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Boxing demonstration with bilateral arm coordination</p>
+                  </div>
+
+                  <!-- Door Opening -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/tOtu6cSq1ik"
+                        title="Humanoid Teleoperation - Door Opening"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Contact-rich door opening task with precise manipulation</p>
+                  </div>
+
+                  <!-- Pouring Water -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/S-VT4-qIth4"
+                        title="Humanoid Teleoperation - Pouring Water"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Dexterous bi-manual water pouring with fine motion control</p>
+                  </div>
+
+                  <!-- Stockpile Block -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/dXk_6Rx0tJM"
+                        title="Humanoid Teleoperation - Stockpile Block"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">Block stacking task demonstrating spatial coordination</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <strong>Reinforcement learning for dexterous manipulation:</strong> Trained humanoid dexterous manipulation policies using reinforcement learning in NVIDIA Isaac Sim/Lab simulation environment for complex object manipulation tasks
+
+              <!-- Demo Video for RL Project -->
+              <div class="mt-3 ml-4">
+                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Video:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Training -->
+                  <div>
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                        src="https://www.youtube.com/embed/GqY8Ji_VTJ4"
+                        title="Reinforcement Learning - Training"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">RL training process in NVIDIA Isaac Sim for dexterous manipulation</p>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
 
@@ -174,103 +389,90 @@
             </div>
             <span class="text-sm text-gray-500">Sep 2023 – Aug 2025</span>
           </div>
-          <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm ml-4">
-            <li><strong>AI-based autonomous excavator control:</strong> Imitation learning based trajectory generation policy design using LSTM networks to learn from expert operators, enabling autonomous execution of diverse excavation tasks (radial digging, trenching, slope work, and stockpile excavation)</li>
-            <li><strong>6-DOF motor grader blade control system:</strong> Designed control system for motor grader blade (hybrid 3-DOF serial + 3-DOF parallel manipulator), implementing forward/inverse kinematics solvers and pose control algorithms for autonomous blade positioning</li>
-            <li><strong>External force estimation for construction equipment:</strong> Developed disturbance observer and Kalman filter-based contact force estimator to estimate soil-bucket interaction forces without additional force/torque sensors (published in IEEE RA-L and TIM)</li>
-          </ul>
+
+          <!-- Project 1: AI-based autonomous excavator control -->
+          <div class="mb-6">
+            <p class="text-sm text-gray-700 ml-4">
+              <strong>AI-based autonomous excavator control:</strong> Imitation learning based trajectory generation policy design using LSTM networks to learn from expert operators, enabling autonomous execution of diverse excavation tasks (radial digging, trenching, slope work, and stockpile excavation)
+            </p>
+
+            <!-- Demo Videos for Excavator Project -->
+            <div class="mt-3 ml-4">
+              <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Radial Excavation -->
+                <div>
+                  <p class="text-xs text-gray-500 mb-1">Radial Excavation</p>
+                  <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe
+                      class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                      src="https://www.youtube.com/embed/bMZdwif54Uo"
+                      title="Radial Excavation Demo"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+
+                <!-- Stockpile Excavation -->
+                <div>
+                  <p class="text-xs text-gray-500 mb-1">Stockpile Excavation</p>
+                  <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe
+                      class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
+                      src="https://www.youtube.com/embed/mN9a3TgMyvE"
+                      title="Stockpile Excavation Demo"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: 6-DOF motor grader blade control system -->
+          <div class="mb-6">
+            <p class="text-sm text-gray-700 ml-4">
+              <strong>6-DOF motor grader blade control system:</strong> Designed control system for motor grader blade (hybrid 3-DOF serial + 3-DOF parallel manipulator), implementing forward/inverse kinematics solvers and pose control algorithms for autonomous blade positioning
+            </p>
+          </div>
+
+          <!-- Project 3: External force estimation for construction equipment -->
+          <div>
+            <p class="text-sm text-gray-700 ml-4">
+              <strong>External force estimation for construction equipment:</strong> Developed disturbance observer and Kalman filter-based contact force estimator to estimate soil-bucket interaction forces without additional force/torque sensors (published in IEEE RA-L and TIM)
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Education</h2>
-
-      <div class="space-y-6">
-        <!-- MS -->
-        <div>
-          <div class="flex justify-between items-start mb-2">
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
-              <p class="text-sm text-gray-700">MS in Mechanical Engineering</p>
-            </div>
-            <span class="text-sm text-gray-500">Sept 2023 – Aug 2025</span>
-          </div>
-          <ul class="text-sm text-gray-700 space-y-1 ml-4">
-            <li>Advisor: Prof. Daehie Hong</li>
-            <li>GPA: 4.5/4.5</li>
-            <li><strong>Thesis:</strong> Adaptive Contact Force Estimation for Robotic Manipulators Using an Interacting Multiple Model-Based Disturbance Kalman Filter and Bayesian Neural Network</li>
-            <li><strong>Coursework:</strong> Linear system, Vehicle dynamics, Robust control, Intelligent control, Digital control, Optimal control, Kinematics Analysis</li>
-          </ul>
-        </div>
-
-        <!-- BS -->
-        <div>
-          <div class="flex justify-between items-start mb-2">
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
-              <p class="text-sm text-gray-700">BS in Mechanical Engineering</p>
-            </div>
-            <span class="text-sm text-gray-500">Mar 2017 – Aug 2023</span>
-          </div>
-          <ul class="text-sm text-gray-700 space-y-1 ml-4">
-            <li>GPA: 3.55/4.5</li>
-            <li><strong>Coursework:</strong> Robotics, Mechatronics, Kinematics</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teaching & Awards Section -->
-  <section id="teaching" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <!-- Teaching Experience -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Teaching Experience</h2>
-        <div class="space-y-4">
-          <div class="flex justify-between items-start">
-            <div>
-              <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MECH226 Dynamics</p>
-              <p class="text-sm text-gray-600">Korea University, Prof. Daehie Hong</p>
-            </div>
-            <span class="text-sm text-gray-500">Mar 2024 – Dec 2024</span>
-          </div>
-          <div class="flex justify-between items-start">
-            <div>
-              <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MOBI208 Dynamics</p>
-              <p class="text-sm text-gray-600">Korea University, Prof. Seongho Yun</p>
-            </div>
-            <span class="text-sm text-gray-500">Mar 2025 – Jun 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Awards -->
+  <!-- Awards Section -->
+  <section id="awards" class="py-16 bg-gray-50">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Awards</h2>
       <div>
-        <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Awards</h2>
-        <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="text-base font-semibold text-gray-900">MATLAB Korea AI Competition for University Students</h3>
-            <span class="text-sm text-gray-500">2023</span>
-          </div>
-          <p class="text-sm text-gray-700 mb-2">Bronze Award (Team Leader)</p>
-          <ul class="list-disc list-inside space-y-1 text-sm text-gray-700 ml-4">
-            <li>Led a team to develop an autonomous excavator trajectory generation system using Deep Learning</li>
-            <li>Implemented a GRU-based network in MATLAB to clone expert excavation skills from human demonstration data</li>
-            <li>Integrated Intel RealSense D455 for real-time terrain perception and achieved smooth digging motion control on a 1/14 scale excavator</li>
-          </ul>
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="text-base font-semibold text-gray-900">MATLAB Korea AI Competition for University Students</h3>
+          <span class="text-sm text-gray-500">2023</span>
         </div>
+        <p class="text-sm text-gray-700 mb-2">Bronze Award (Team Leader)</p>
+        <ul class="list-disc list-inside space-y-1 text-sm text-gray-700 ml-4">
+          <li>Led a team to develop an autonomous excavator trajectory generation system using Deep Learning</li>
+          <li>Implemented a GRU-based network in MATLAB to clone expert excavation skills from human demonstration data</li>
+          <li>Integrated Intel RealSense D455 for real-time terrain perception and achieved smooth digging motion control on a 1/14 scale excavator</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Technologies Section -->
-  <section id="technologies" class="py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
+  <section id="technologies" class="py-16 bg-white">
+    <div class="max-w-[1400px] mx-auto px-6">
       <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Technologies & Skills</h2>
       <div class="space-y-4">
         <div>
@@ -290,8 +492,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 bg-white border-t border-gray-200">
-    <div class="max-w-4xl mx-auto px-6 text-center text-sm text-gray-500">
+  <footer class="py-8 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-[1400px] mx-auto px-6 text-center text-sm text-gray-500">
       <p>© 2025 Seonwoo Kim. Last updated: January 2026.</p>
     </div>
   </footer>

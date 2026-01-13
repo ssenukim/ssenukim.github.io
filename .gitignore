@@ -1,0 +1,9 @@
+# Videos (large files)
+videos/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
