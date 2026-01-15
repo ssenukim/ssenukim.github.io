@@ -4,15 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seonwoo Kim - Robotics Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hide scrollbar for mobile navigation */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
-<body class="antialiased scroll-smooth bg-gray-50 text-gray-900">
+<body class="antialiased scroll-smooth bg-gray-50 text-gray-900" style="font-family: 'Inter', sans-serif;">
 
   <!-- Header -->
   <header class="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-200 z-20">
     <nav class="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">
       <div class="text-2xl font-semibold text-gray-900">Seonwoo Kim</div>
-      <ul class="flex space-x-8 text-sm">
+      <ul class="flex space-x-4 md:space-x-8 text-lg overflow-x-auto whitespace-nowrap py-2 no-scrollbar">
         <li><a href="#home" class="hover:text-gray-600 transition">Home</a></li>
         <li><a href="#education" class="hover:text-gray-600 transition">Education</a></li>
         <li><a href="#teaching" class="hover:text-gray-600 transition">Teaching</a></li>
@@ -42,8 +55,8 @@
         <!-- Profile Info -->
         <div class="flex-1">
           <h1 class="text-4xl font-bold text-gray-900 mb-2">Seonwoo Kim</h1>
-          <p class="text-lg text-gray-600 mb-4">MS in Mechanical Engineering, Korea University</p>
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-600 mb-6">
+          <p class="text-xl text-gray-600 mb-4">MS in Mechanical Engineering, Korea University</p>
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-lg text-gray-600 mb-4">
             <a href="mailto:whimoon1826@naver.com" class="hover:text-gray-900 transition">whimoon1826@naver.com</a>
             <span class="hidden sm:inline">|</span>
             <a href="https://ssenukim.github.io" class="hover:text-gray-900 transition">ssenukim.github.io</a>
@@ -51,16 +64,30 @@
             <a href="https://linkedin.com" class="hover:text-gray-900 transition" target="_blank">LinkedIn</a>
           </div>
 
-          <div class="prose prose-gray max-w-none">
+          <!-- Download CV Button -->
+          <div class="mb-6">
+            <a
+              href="./CV/My_CV.pdf"
+              target="_blank"
+              class="inline-flex items-center bg-blue-600 text-white px-6 py-2.5 rounded-md hover:bg-blue-700 transition font-medium"
+            >
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+          <div class="prose prose-gray max-w-4xl">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300">About</h2>
-            <div class="text-gray-700 leading-relaxed">
+            <div class="text-gray-700 leading-relaxed text-lg">
               <p>
                 I am a robotics engineer specializing in <strong>robotic manipulation</strong>. I received both my <strong>B.S. and M.S. degrees in Mechanical Engineering</strong> from Korea University. During my Master's studies, I built a strong foundation in <strong>classical control engineering and state estimation theory</strong> for robotic manipulators. Currently, my research focuses on <strong>humanoid bi-manual manipulation</strong> using <strong>data-driven approaches</strong>. My ultimate goal is to address complex manipulation tasks by integrating <strong>classical model-based control and planning methods</strong> with modern <strong>learning-based techniques</strong>.
               </p>
             </div>
 
             <h2 class="text-2xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-300 mt-8">Current Interests</h2>
-            <div class="text-gray-700 leading-relaxed space-y-4">
+            <div class="text-gray-700 leading-relaxed space-y-4 text-lg">
               <p>
                 My research interests lie in <strong>contact-rich robot manipulation</strong> and <strong>lightweight robot learning models</strong>. Currently, I am exploring the following key questions:
               </p>
@@ -89,12 +116,12 @@
         <div>
           <div class="flex justify-between items-start mb-2">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
-              <p class="text-sm text-gray-700">MS in Mechanical Engineering</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Korea University</h3>
+              <p class="text-lg text-gray-700">MS in Mechanical Engineering</p>
             </div>
-            <span class="text-sm text-gray-500">Sept 2023 – Aug 2025</span>
+            <span class="text-lg text-gray-500">Sept 2023 – Aug 2025</span>
           </div>
-          <ul class="text-sm text-gray-700 space-y-1 ml-4">
+          <ul class="text-lg text-gray-700 space-y-1 ml-4">
             <li>Advisor: Prof. Daehie Hong</li>
             <li>GPA: 4.5/4.5</li>
             <li><strong>Thesis:</strong> Adaptive Contact Force Estimation for Robotic Manipulators Using an Interacting Multiple Model-Based Disturbance Kalman Filter and Bayesian Neural Network</li>
@@ -106,12 +133,12 @@
         <div>
           <div class="flex justify-between items-start mb-2">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
-              <p class="text-sm text-gray-700">BS in Mechanical Engineering</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Korea University</h3>
+              <p class="text-lg text-gray-700">BS in Mechanical Engineering</p>
             </div>
-            <span class="text-sm text-gray-500">Mar 2017 – Aug 2023</span>
+            <span class="text-lg text-gray-500">Mar 2017 – Aug 2023</span>
           </div>
-          <ul class="text-sm text-gray-700 space-y-1 ml-4">
+          <ul class="text-lg text-gray-700 space-y-1 ml-4">
             <li>GPA: 3.55/4.5</li>
             <li><strong>Coursework:</strong> Robotics, Mechatronics, Kinematics</li>
           </ul>
@@ -127,17 +154,17 @@
       <div class="space-y-4">
         <div class="flex justify-between items-start">
           <div>
-            <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MECH226 Dynamics</p>
-            <p class="text-sm text-gray-600">Korea University, Prof. Daehie Hong</p>
+            <p class="text-lg text-gray-700"><strong>Teaching Assistant</strong>, MECH226 Dynamics</p>
+            <p class="text-lg text-gray-600">Korea University, Prof. Daehie Hong</p>
           </div>
-          <span class="text-sm text-gray-500">Mar 2024 – Dec 2024</span>
+          <span class="text-lg text-gray-500">Mar 2024 – Dec 2024</span>
         </div>
         <div class="flex justify-between items-start">
           <div>
-            <p class="text-sm text-gray-700"><strong>Teaching Assistant</strong>, MOBI208 Dynamics</p>
-            <p class="text-sm text-gray-600">Korea University, Prof. Seongho Yun</p>
+            <p class="text-lg text-gray-700"><strong>Teaching Assistant</strong>, MOBI208 Dynamics</p>
+            <p class="text-lg text-gray-600">Korea University, Prof. Seongho Yun</p>
           </div>
-          <span class="text-sm text-gray-500">Mar 2025 – Jun 2025</span>
+          <span class="text-lg text-gray-500">Mar 2025 – Jun 2025</span>
         </div>
       </div>
     </div>
@@ -151,75 +178,75 @@
       <div class="space-y-8">
         <!-- Journal Articles -->
         <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-4">Journal Articles</h3>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Journal Articles</h3>
           <div class="space-y-6">
             <!-- Publication 1 -->
             <div class="pl-4 border-l-2 border-gray-300">
-              <h4 class="font-medium text-gray-900 mb-2">
+              <h4 class="text-lg font-bold text-gray-900 mb-2">
                 Task Space End-Effector Contact Force Estimation for Robotic Manipulators Using a Bayesian Augmented Interacting Multiple Model-Based Disturbance Kalman Filter
               </h4>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <span class="font-semibold">Seonwoo Kim</span>, Myeongin Jin, Jihun Kim, Chanwoo Kim, Daehie Hong
               </p>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <em>IEEE Transactions on Instrumentation and Measurement (IEEE TIM)</em>, 2026 (Accepted)
               </p>
-              <p class="text-xs text-gray-500">SCIE, First author</p>
+              <p class="text-base text-gray-500">SCIE, First author</p>
             </div>
 
             <!-- Publication 2 -->
             <div class="pl-4 border-l-2 border-gray-300">
-              <h4 class="font-medium text-gray-900 mb-2">
+              <h4 class="text-lg font-bold text-gray-900 mb-2">
                 Acceleration Measurement-Free Dissipative Disturbance Observer for Robotic Manipulators
               </h4>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <span class="font-semibold">Seonwoo Kim</span>, Chanwoo Kim, Yeonho Ko, Daehie Hong
               </p>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <em>IEEE Robotics and Automation Letters (IEEE RA-L)</em>, 2025
               </p>
-              <p class="text-xs text-gray-500">SCIE, First author</p>
-              <a href="https://doi.org/10.1109/LRA.2025.3564205" class="text-sm text-gray-700 hover:text-gray-900 underline" target="_blank">DOI: 10.1109/LRA.2025.3564205</a>
+              <p class="text-base text-gray-500">SCIE, First author</p>
+              <a href="https://doi.org/10.1109/LRA.2025.3564205" class="text-lg text-gray-700 hover:text-gray-900 underline" target="_blank">DOI: 10.1109/LRA.2025.3564205</a>
             </div>
           </div>
         </div>
 
         <!-- Conference Proceedings -->
         <div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-4">Conference Proceedings</h3>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Conference Proceedings</h3>
           <div class="space-y-4">
             <div class="pl-4 border-l-2 border-gray-200">
-              <h4 class="font-medium text-gray-800 mb-1">
+              <h4 class="text-lg font-bold text-gray-800 mb-1">
                 Soil Interaction Force Estimation via Identified Excavator Dynamics with Particle Filter
               </h4>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <span class="font-semibold">Seonwoo Kim</span>, Jihun Kim, Chanwoo Kim, Daehie Hong
               </p>
-              <p class="text-sm text-gray-600">
+              <p class="text-lg text-gray-600">
                 <em>International Conference on Precision Engineering and Sustainable Manufacturing (PRESM 2024)</em>
               </p>
             </div>
 
             <div class="pl-4 border-l-2 border-gray-200">
-              <h4 class="font-medium text-gray-800 mb-1">
+              <h4 class="text-lg font-bold text-gray-800 mb-1">
                 Estimating the Interaction Force Between Excavator Bucket and Ground Using a Simplified Dynamical Model and Hydraulic Sensors
               </h4>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <span class="font-semibold">Seonwoo Kim</span>, Jangho Bae, Chanwoo Kim, Jihun Kim, Daehie Hong
               </p>
-              <p class="text-sm text-gray-600">
+              <p class="text-lg text-gray-600">
                 <em>Proceedings of the KSPE 2024 Spring Conference</em>
               </p>
             </div>
 
             <div class="pl-4 border-l-2 border-gray-200">
-              <h4 class="font-medium text-gray-800 mb-1">
+              <h4 class="text-lg font-bold text-gray-800 mb-1">
                 Optimal Excavator Bucket Trajectory Generation with Soil Mechanics Model Design
               </h4>
-              <p class="text-sm text-gray-600 mb-1">
+              <p class="text-lg text-gray-600 mb-1">
                 <span class="font-semibold">Seonwoo Kim</span>, Jangho Bae, Jaemyung Huh, Chanyoung Moon, Cheolhwan Im, Jinwoo Park, Daehie Hong
               </p>
-              <p class="text-sm text-gray-600">
+              <p class="text-lg text-gray-600">
                 <em>Proceedings of the KSPE 2023 Autumn Conference</em>
               </p>
             </div>
@@ -239,18 +266,18 @@
         <div>
           <div class="flex justify-between items-start mb-2">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea Institute of Science and Technology (KIST)</h3>
-              <p class="text-sm text-gray-600">Intern Researcher</p>
+              <h3 class="text-xl font-semibold text-gray-900">Korea Institute of Science and Technology (KIST)</h3>
+              <p class="text-lg text-gray-600">Intern Researcher</p>
             </div>
-            <span class="text-sm text-gray-500">Jul 2025 – Dec 2025</span>
+            <span class="text-lg text-gray-500">Jul 2025 – Dec 2025</span>
           </div>
-          <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm ml-4">
+          <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg ml-4">
             <li>
               <strong>Autonomous bi-manual manipulation for humanoid robots:</strong> Developed humanoid bi-manual manipulation policies by training robot foundation model based AI model (Nvidia Gr00t) with combined real-world and synthetic datasets, enabling robust dual-arm coordination
 
               <!-- Demo Videos for Nvidia Gr00t Project -->
               <div class="mt-3 ml-4">
-                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+                <p class="text-base text-gray-600 mb-2 font-medium">Demo Videos:</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <!-- Deployment -->
                   <div>
@@ -260,11 +287,12 @@
                         src="https://www.youtube.com/embed/RWcn0mJ8BYI"
                         title="Nvidia Gr00t - Deployment"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Robot foundation model deployment on humanoid platform</p>
+                    <p class="text-base text-gray-500 mt-1">Robot foundation model deployment on humanoid platform</p>
                   </div>
 
                   <!-- Synthetic Data -->
@@ -275,11 +303,12 @@
                         src="https://www.youtube.com/embed/HSkYfzylm7k"
                         title="Nvidia Gr00t - Synthetic Data"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Synthetic data generation for training bi-manual manipulation policies</p>
+                    <p class="text-base text-gray-500 mt-1">Synthetic data generation for training bi-manual manipulation policies</p>
                   </div>
                 </div>
               </div>
@@ -289,7 +318,7 @@
 
               <!-- Demo Videos for Teleoperation Project -->
               <div class="mt-3 ml-4">
-                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+                <p class="text-base text-gray-600 mb-2 font-medium">Demo Videos:</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <!-- Boxing -->
                   <div>
@@ -299,11 +328,12 @@
                         src="https://www.youtube.com/embed/kcBF_xSYIxw"
                         title="Humanoid Teleoperation - Boxing"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Boxing demonstration with bilateral arm coordination</p>
+                    <p class="text-base text-gray-500 mt-1">Boxing demonstration with bilateral arm coordination</p>
                   </div>
 
                   <!-- Door Opening -->
@@ -314,11 +344,12 @@
                         src="https://www.youtube.com/embed/tOtu6cSq1ik"
                         title="Humanoid Teleoperation - Door Opening"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Contact-rich door opening task with precise manipulation</p>
+                    <p class="text-base text-gray-500 mt-1">Contact-rich door opening task with precise manipulation</p>
                   </div>
 
                   <!-- Pouring Water -->
@@ -329,11 +360,12 @@
                         src="https://www.youtube.com/embed/S-VT4-qIth4"
                         title="Humanoid Teleoperation - Pouring Water"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Dexterous bi-manual water pouring with fine motion control</p>
+                    <p class="text-base text-gray-500 mt-1">Dexterous bi-manual water pouring with fine motion control</p>
                   </div>
 
                   <!-- Stockpile Block -->
@@ -344,11 +376,12 @@
                         src="https://www.youtube.com/embed/dXk_6Rx0tJM"
                         title="Humanoid Teleoperation - Stockpile Block"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">Block stacking task demonstrating spatial coordination</p>
+                    <p class="text-base text-gray-500 mt-1">Block stacking task demonstrating spatial coordination</p>
                   </div>
                 </div>
               </div>
@@ -358,7 +391,7 @@
 
               <!-- Demo Video for RL Project -->
               <div class="mt-3 ml-4">
-                <p class="text-xs text-gray-600 mb-2 font-medium">Demo Video:</p>
+                <p class="text-base text-gray-600 mb-2 font-medium">Demo Video:</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <!-- Training -->
                   <div>
@@ -368,11 +401,12 @@
                         src="https://www.youtube.com/embed/GqY8Ji_VTJ4"
                         title="Reinforcement Learning - Training"
                         frameborder="0"
+                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                       </iframe>
                     </div>
-                    <p class="text-xs text-gray-500 mt-1">RL training process in NVIDIA Isaac Sim for dexterous manipulation</p>
+                    <p class="text-base text-gray-500 mt-1">RL training process in NVIDIA Isaac Sim for dexterous manipulation</p>
                   </div>
                 </div>
               </div>
@@ -384,31 +418,32 @@
         <div>
           <div class="flex justify-between items-start mb-2">
             <div>
-              <h3 class="text-lg font-semibold text-gray-900">Korea University</h3>
-              <p class="text-sm text-gray-600">Student Researcher</p>
+              <h3 class="text-xl font-semibold text-gray-900">Korea University</h3>
+              <p class="text-lg text-gray-600">Student Researcher</p>
             </div>
-            <span class="text-sm text-gray-500">Sep 2023 – Aug 2025</span>
+            <span class="text-lg text-gray-500">Sep 2023 – Aug 2025</span>
           </div>
 
           <!-- Project 1: AI-based autonomous excavator control -->
           <div class="mb-6">
-            <p class="text-sm text-gray-700 ml-4">
+            <p class="text-lg text-gray-700 ml-4">
               <strong>AI-based autonomous excavator control:</strong> Imitation learning based trajectory generation policy design using LSTM networks to learn from expert operators, enabling autonomous execution of diverse excavation tasks (radial digging, trenching, slope work, and stockpile excavation)
             </p>
 
             <!-- Demo Videos for Excavator Project -->
             <div class="mt-3 ml-4">
-              <p class="text-xs text-gray-600 mb-2 font-medium">Demo Videos:</p>
+              <p class="text-base text-gray-600 mb-2 font-medium">Demo Videos:</p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Radial Excavation -->
                 <div>
-                  <p class="text-xs text-gray-500 mb-1">Radial Excavation</p>
+                  <p class="text-base text-gray-500 mb-1">Radial Excavation</p>
                   <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
                     <iframe
                       class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
                       src="https://www.youtube.com/embed/bMZdwif54Uo"
                       title="Radial Excavation Demo"
                       frameborder="0"
+                      loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen>
                     </iframe>
@@ -417,13 +452,14 @@
 
                 <!-- Stockpile Excavation -->
                 <div>
-                  <p class="text-xs text-gray-500 mb-1">Stockpile Excavation</p>
+                  <p class="text-base text-gray-500 mb-1">Stockpile Excavation</p>
                   <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
                     <iframe
                       class="absolute top-0 left-0 w-full h-full rounded border border-gray-300"
                       src="https://www.youtube.com/embed/mN9a3TgMyvE"
                       title="Stockpile Excavation Demo"
                       frameborder="0"
+                      loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen>
                     </iframe>
@@ -435,14 +471,14 @@
 
           <!-- Project 2: 6-DOF motor grader blade control system -->
           <div class="mb-6">
-            <p class="text-sm text-gray-700 ml-4">
+            <p class="text-lg text-gray-700 ml-4">
               <strong>6-DOF motor grader blade control system:</strong> Designed control system for motor grader blade (hybrid 3-DOF serial + 3-DOF parallel manipulator), implementing forward/inverse kinematics solvers and pose control algorithms for autonomous blade positioning
             </p>
           </div>
 
           <!-- Project 3: External force estimation for construction equipment -->
           <div>
-            <p class="text-sm text-gray-700 ml-4">
+            <p class="text-lg text-gray-700 ml-4">
               <strong>External force estimation for construction equipment:</strong> Developed disturbance observer and Kalman filter-based contact force estimator to estimate soil-bucket interaction forces without additional force/torque sensors (published in IEEE RA-L and TIM)
             </p>
           </div>
@@ -457,11 +493,11 @@
       <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Awards</h2>
       <div>
         <div class="flex justify-between items-start mb-2">
-          <h3 class="text-base font-semibold text-gray-900">MATLAB Korea AI Competition for University Students</h3>
-          <span class="text-sm text-gray-500">2023</span>
+          <h3 class="text-2xl font-semibold text-gray-900">MATLAB Korea AI Competition for University Students</h3>
+          <span class="text-lg text-gray-500">2023</span>
         </div>
-        <p class="text-sm text-gray-700 mb-2">Bronze Award (Team Leader)</p>
-        <ul class="list-disc list-inside space-y-1 text-sm text-gray-700 ml-4">
+        <p class="text-lg text-gray-700 mb-2">Bronze Award (Team Leader)</p>
+        <ul class="list-disc list-inside space-y-1 text-lg text-gray-700 ml-4">
           <li>Led a team to develop an autonomous excavator trajectory generation system using Deep Learning</li>
           <li>Implemented a GRU-based network in MATLAB to clone expert excavation skills from human demonstration data</li>
           <li>Integrated Intel RealSense D455 for real-time terrain perception and achieved smooth digging motion control on a 1/14 scale excavator</li>
@@ -476,16 +512,16 @@
       <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-2 border-b border-gray-300">Technologies & Skills</h2>
       <div class="space-y-4">
         <div>
-          <h3 class="text-sm font-semibold text-gray-800 mb-2">Programming Languages</h3>
-          <p class="text-sm text-gray-700">C, C++, Python, Matlab/Simulink, Labview, Julia</p>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Programming Languages</h3>
+          <p class="text-lg text-gray-700">C, C++, Python, Matlab/Simulink, Labview, Julia</p>
         </div>
         <div>
-          <h3 class="text-sm font-semibold text-gray-800 mb-2">Developer Tools</h3>
-          <p class="text-sm text-gray-700">PyTorch, Isaac Sim/Lab, ROS2, Git, Docker</p>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Developer Tools</h3>
+          <p class="text-lg text-gray-700">PyTorch, Isaac Sim/Lab, ROS2, Git, Docker</p>
         </div>
         <div>
-          <h3 class="text-sm font-semibold text-gray-800 mb-2">CAD</h3>
-          <p class="text-sm text-gray-700">SolidWorks</p>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">CAD</h3>
+          <p class="text-lg text-gray-700">SolidWorks</p>
         </div>
       </div>
     </div>
@@ -493,7 +529,7 @@
 
   <!-- Footer -->
   <footer class="py-8 bg-gray-50 border-t border-gray-200">
-    <div class="max-w-[1400px] mx-auto px-6 text-center text-sm text-gray-500">
+    <div class="max-w-[1400px] mx-auto px-6 text-center text-base text-gray-500">
       <p>© 2025 Seonwoo Kim. Last updated: January 2026.</p>
     </div>
   </footer>
